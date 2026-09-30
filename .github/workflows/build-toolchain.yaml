@@ -16,4 +16,4 @@ jobs:
       - name: Get buildroot
         run: |
           set -eux
-          curl --retry 5 -L "http://buildroot.org/downloads/buildroot-2026.05.3.tar.xz" | tar xzf -
+          curl --retry 5 -L "http://buildroot.org/downloads/buildroot-2026.05.3.tar.xz" | tar xf -
