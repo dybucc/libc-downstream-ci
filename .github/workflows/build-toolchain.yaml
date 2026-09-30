@@ -11,11 +11,9 @@ jobs:
       - name: Install buildroot prerequisites
         run: |
           set -eux
-          sudo apt update
-          sudo apt upgrade -y
-          sudo apt install -y build-essential diffutils cpio unzip bc patch
+          sudo apt install -y build-essential
 
       - name: Get buildroot
         run: |
           set -eux
-          curl --retry 5 -L "http://buildroot.org/downloads/buildroot-2026.05.3.tar.xz" | tar xzf
+          curl --retry 5 -L "http://buildroot.org/downloads/buildroot-2026.05.3.tar.xz" | tar xzf -
