@@ -15,7 +15,7 @@ on:
         type: choice
         options:
           - rust-lang/libc
-          - skrap/libc
+          - dybucc/libc
       branch:
         description: libc branch to use
         required: true
@@ -24,7 +24,7 @@ on:
         options:
           - main
           - libc-0.2
-          - bugfix/uclibc-docker-ci-build-fixes
+          - uclibc-lfs-support
 
 env:
   CARGO_TERM_COLOR: always
